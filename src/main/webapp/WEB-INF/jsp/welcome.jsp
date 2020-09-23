@@ -3,6 +3,6 @@
 	<title>First web application</title>
 </head>
 <body>
-	Welcome ${name}!!
+	Welcome ${name}!! 
 </body>
 </html>
