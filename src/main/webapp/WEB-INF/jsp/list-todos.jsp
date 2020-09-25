@@ -3,6 +3,6 @@
 	<title>Manage your todo's</title>
 </head>
 <body>
-	Welcome ${name}!! <a href="/list-todos">Click here</a> to manage yours todo's
+	Here are the list of your todo's: ${todos}
 </body>
 </html>
