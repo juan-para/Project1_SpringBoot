@@ -9,8 +9,7 @@ public class Todo {
     private Date targetDate;
     private boolean isDone;
 
-    public Todo(int id, String user, String desc, Date targetDate,
-            boolean isDone) {
+    public Todo(int id, String user, String desc, Date targetDate, boolean isDone) {
         super();
         this.id = id;
         this.user = user;
@@ -88,8 +87,7 @@ public class Todo {
     @Override
     public String toString() {
         return String.format(
-                "Todo [id=%s, user=%s, desc=%s, targetDate=%s, isDone=%s]", id,
-                user, desc, targetDate, isDone);
+                "Todo [id=%s, user=%s, desc=%s, targetDate=%s, isDone=%s]", id, user, desc, targetDate, isDone);
     }
 
 }
