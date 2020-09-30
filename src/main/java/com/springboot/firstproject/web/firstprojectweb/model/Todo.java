@@ -2,15 +2,26 @@ package com.springboot.firstproject.web.firstprojectweb.model;
 
 import java.util.Date;
 
+import javax.validation.constraints.Size;
+
 public class Todo {
     private int id;
     private String user;
+    
+    @Size(min = 10, message = "Enter at least 10 characteres")
     private String desc;
     private Date targetDate;
     private boolean isDone;
 
+    public Todo() {
+        this.id = 0;
+        this.user = "";
+        this.desc = "";
+        this.targetDate = new Date();
+        this.isDone = false;
+    }
+    
     public Todo(int id, String user, String desc, Date targetDate, boolean isDone) {
-        super();
         this.id = id;
         this.user = user;
         this.desc = desc;
