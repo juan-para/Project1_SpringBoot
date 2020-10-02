@@ -41,7 +41,7 @@ public class TodoController {
 	}
 
 	private String getLoggedInUserName(ModelMap model) {
-		return (String) model.get("name");
+		return (String) model.get("name");d
 	}
 
 	@RequestMapping(value = "/add-todo", method = RequestMethod.GET)
